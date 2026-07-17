@@ -1,6 +1,6 @@
 """CoMPASS Level-2 open-field package."""
 
-from .level2_datastreams import (
+from .datastreams import (
     LEVEL2_CATEGORICAL_FEATURES,
     LEVEL2_CONTINUOUS_FEATURES,
     LEVEL2_MODEL_FEATURES,
@@ -13,7 +13,7 @@ from .level2_datastreams import (
     create_level2_datastreams_dict,
     estimate_circle_from_extremes,
 )
-from .level2_preprocessing import (
+from .preprocessing import (
     FeaturePreprocessor,
     concat_sequences,
     drop_invalid_feature_rows,
@@ -25,7 +25,7 @@ from .level2_preprocessing import (
     transform_features,
     validate_features,
 )
-from .level2_model import (
+from .model import (
     choose_best_hyperparams_nested,
     estimate_startprob_and_transmat,
     fit_bgmm,
@@ -34,7 +34,7 @@ from .level2_model import (
     initialize_gmmhmm_from_bgmm,
     map_bgmm_components_to_states,
 )
-from .level2_pipeline import (
+from .pipeline import (
     evaluate_one_outer_fold,
     fit_final_model_all_sessions,
     fit_model_on_session_blocks,
