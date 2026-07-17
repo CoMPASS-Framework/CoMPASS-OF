@@ -1,7 +1,7 @@
 """CoMPASS Level-1 movement-state package."""
 
 from .datastreams import prep_data, plot_step_and_angle_distributions
-from .level1_model import (
+from .model import (
     BestResult,
     GammaVonMisesHMM,
     compute_parameter_ranges_vm,
